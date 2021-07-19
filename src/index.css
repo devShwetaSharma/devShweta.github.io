@@ -134,4 +134,7 @@ svg.FoodItem-remove {
     width: 100%;
     margin: 10px 0;
   }
+  .FoodItem-modal p {
+    font-size: 12px;
+  }
 }
