@@ -6,7 +6,7 @@ const FoodSearch = (props) => {
     }
 
     let handleKeyUp = (e) => {
-        let value = e.target.value;
+        let value = e.target.value.toLowerCase();
         let existingList = JSON.parse(localStorage.getItem('food'));
         if(value){
             let newList = [];

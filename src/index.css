@@ -10,82 +10,7 @@ body {
   background-image: url('images/food.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  color: #fff;
-  padding: 5% 10%;
-  width: 90%;
-  border: 1px solid #797878;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.App h1{
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
-.App p{
-  padding: 10px;
-  background-color: #0041e6;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.App form{    padding: 35px 0;}
-
-.App form label {
-  display: block;
-  margin-bottom: 25px;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.App form input[type="text"], .App form input[type="password"] {
-  height: 30px;
-  width: 300px;
-  margin-left: 20px;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.App form input[type="submit"] {
-  background: #2773fd;
-  border: none;
-  color: #fff;
-  letter-spacing: 1px;
-  font-size: 17px;
-  width: 200px;
-  height: 40px;
-  border-radius: 4px;
-  margin-top: 15px;
-}
-
-.AddDefect {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: red;
-}
-
-table{ width: 100% }
-
-table, th, td {
-  border: 1px solid #fff;
-  border-collapse: collapse;
+  height: 100vh;
 }
 
 .Food{
@@ -195,4 +120,18 @@ svg.FoodItem-remove {
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
+}
+
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 600px){
+  .FoodSearch{
+    display: block;
+  }
+  .Food{margin: 15% auto;}
+  .FoodSearch input[type="search"]{
+    width: 100%;
+    margin: 10px 0;
+  }
 }
