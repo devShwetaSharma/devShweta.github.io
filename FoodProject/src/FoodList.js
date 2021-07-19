@@ -13,7 +13,7 @@ const FoodList = (props) => {
                     props.fooditems.map((f,i) => 
                         <FoodItem itemkey={i} name={f.name} fav={f.isFavourite} updateList={props.editFood}/>
                     )
-                ) : <div className="FoodList-empty">You don't have any food items in the list</div>
+                ) : <div className="FoodList-empty">Youuuuuuuuu don't have any food items in the list</div>
             }
         </div>
     )
