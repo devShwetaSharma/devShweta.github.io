@@ -10,7 +10,7 @@ const FoodSearch = (props) => {
         let existingList = JSON.parse(localStorage.getItem('food'));
         if(value){
             let newList = [];
-            newList = existingList.filter(i => i.name.toLowerCase().indexOf(value) != -1);
+            newList = existingList.filter(i => i.name.toLowerCase().indexOf(value) !== -1);
             newList ? props.filterFood(newList) : newList = existingList;
         }else{
             props.filterFood(existingList);

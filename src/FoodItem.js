@@ -22,6 +22,7 @@ const FoodItem = (props) => {
             if(f.name === value){
                 f.isFavourite = !f.isFavourite;
             }
+            return f.isFavourite;
         });
         localStorage.setItem('food', JSON.stringify(newList));
         props.updateList(newList);
